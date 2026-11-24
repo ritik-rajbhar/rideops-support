@@ -1,0 +1,5 @@
+next-env.d.ts
+*.tsbuildinfo
+coverage/
+# Written by next dev on every run
+AGENTS.md

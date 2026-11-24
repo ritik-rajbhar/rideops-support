@@ -1,0 +1,6 @@
+# Local databases and any data exports
+*.db
+*.sqlite
+*.sqlite3
+*.csv
+data/

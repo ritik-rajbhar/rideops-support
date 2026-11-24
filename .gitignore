@@ -1,0 +1,31 @@
+# Case study inputs (confidential, not for a public repo)
+files/
+*.pdf
+rideops_support_tickets.csv
+rideops_data_dictionary.csv
+data/raw/
+
+# Env and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies and builds
+node_modules/
+.next/
+dist/
+build/
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+
+# Local tooling
+.claude/
+.vercel/
+.DS_Store
+
+# Submission documents
+submission/

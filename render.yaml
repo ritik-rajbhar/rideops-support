@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: rideops-precheck-api
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    healthCheckPath: /api/v1/health
+    autoDeploy: false
+    envVars:
+      - key: ACCESS_CODE
+        sync: false
+      # Add the tickets CSV in the Render dashboard as a secret file with this name.
+      - key: RIDEOPS_DATA_PATH
+        value: /etc/secrets/rideops_support_tickets.csv
+      # Free-tier disk is ephemeral. Set a postgresql:// URL to keep decisions across restarts.
+      - key: DATABASE_URL
+        value: sqlite:////tmp/rideops.db
+      - key: WARM_REPORTS
+        value: "true"
