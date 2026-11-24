@@ -2,7 +2,7 @@
 
 An internal tool for **L1 support agents** at RideOps. Before a ticket goes to engineering, it checks whether the ticket is ready, whether it looks like a known issue, and what evidence is still missing.
 
-**Live app:** _add your hosted link here_ (no login needed; the first load can take up to a minute while the free API server wakes up)
+**Live app:** <https://rideops-support-tau.vercel.app> (no login needed; the first load can take up to a minute while the free API server wakes up)
 
 ## The problem in one paragraph
 
